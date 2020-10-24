@@ -37,6 +37,24 @@ An alternate bounty plugin for pocketmine using EconomyAPI.
 - Compatibilty with EconomyAPI.
 - When a player with a bounty is killed, their bounty is reset to 0 and whatever they were worth goes to the killer.
 
+# Config 
+
+~ Main configuration file for bounty
+
+~ Minimum amount a player can set a bounty for:
+
+    minimum-amount: 1000
+
+~ Maxiumum amount a player can set a bounty for:
+
+    maximum-amount: 100000000
+
+~ Cooldown for adding a bounty to a player in seconds:
+
+    bounty-cooldown: 600
+    
+- There is also a messages.yml file that you can edit to change messages!
+
 # API
 Get a players bounty worth by first getting this plugin, then do:
     

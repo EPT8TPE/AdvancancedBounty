@@ -32,7 +32,7 @@ An alternate bounty plugin for pocketmine using EconomyAPI.
 
 # Features
 - All messages are configurable in messages.yml.
-- Configurable cooldown for /bounty add in config.yml.
+- Configurable cooldown for /bounty add in config.yml to prevent exploiting!
 - Ability to set minimum and maximum bounty added in config.yml.
 - Compatibilty with EconomyAPI.
 - When a player with a bounty is killed, their bounty is reset to 0 and whatever they were worth goes to the killer.

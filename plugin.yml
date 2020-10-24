@@ -1,0 +1,17 @@
+name: AdvancedBounty
+main: TPE\AdvancedBounty\AdvancedBounty
+version: 1.0.0
+author: TPE
+api: 3.0.0
+
+permissions:
+  bounty.command:
+    default: true
+  bounty.command.me:
+    default: true
+  bounty.command.see:
+    default: true
+  bounty.command.add:
+    default: true
+  bounty.command.reset:
+    default: op

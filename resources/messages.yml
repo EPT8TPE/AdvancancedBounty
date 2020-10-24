@@ -1,0 +1,82 @@
+# Message sent to player if they lack permission to use bounty commands.
+
+no-perms-message: "§cYou do not have permission to use /bounty!"
+
+no-perms-bounty-me: "§cYou do not have permission to use /bounty <me>!"
+
+no-perms-bounty-see: "§cYou do not have permission to use /bounty <see> <player>!"
+
+no-perms-bounty-add: "§cYou do not have permission to use /bounty <add> <player>!"
+
+no-perms-bounty-reset: "§cYou do not have permission to use /bounty <reset> <player>"
+
+# Message sent to player if they do not specify an arguement.
+
+usage-message: "§cUsage: /bounty <me|add|reset|see> <player>"
+
+# Message sent to player when they run /bounty <me>, use {CURRENT_BOUNTY} for the amount currently set on them.
+
+bounty-me-message: "§aThere is currently a bounty of §c${CURRENT_BOUNTY}§a, for your head!"
+
+# Message sent to player when they run /bounty <me> and there is no bounty on them.
+
+no-bounty-message: "§cThere is currently no bounty on your head!"
+
+# Message sent to sender if the player they specified could not be found.
+
+target-not-found: "§cSpecified player could not be found!"
+
+# Message sent to sender when they run /bounty <see> <player>, use {CURRENT_BOUNTY} for the amount currently set on the 
+# specified player and {PLAYER} for the players name..
+
+bounty-see-message: "§aThere is currently a bounty of §c${CURRENT_BOUNTY}§a, for §c{PLAYER}'s§a head!"
+
+# Message sent to sender if specified player has no bounty set on them, use {PLAYER} for the player's name.
+
+no-bounty-see-message: "§cThere is currently no bounty on {PLAYER}'s head!"
+
+# Message sent to player if the amount specified is too low or too high, use {MINIMUM_AMOUNT} for the 
+# minimum amount and {MAXIMUM_AMOUNT} for the maximum amount.
+
+too-high-too-low-message: "§cAmount specified must be between ${MINIMUM_AMOUNT} and ${MAXIMUM_AMOUNT}"
+
+# Message sent to player if the amount they specify is larger than their balance, use {MONEY} for their balance.
+
+not-enough-money: "§cThe amount specified exceeds your current balance! You currently have ${MONEY}"
+
+# Message sent to playr if /bounty add is currently on cooldown, use {REMAINING_TIME} for the amount of seconds
+# before they can use the command again.
+
+cooldown-message: "§cThis command is on cooldown for the next {REMAINING_TIME} seconds!"
+
+# Message sent to player if the amount specified is not numeric
+
+not-numeric: "§cSpecified amount needs to be numeric!"
+
+# Message sent to player when they set a bounty on a player, use {PLAYER} for the players name and {AMOUNT} for
+# the amount set and {CURRENT_AMOUNT} for the total amount the player's head is now worth.
+
+bounty-add-success: "§aSuccessfully added ${AMOUNT} to {PLAYER}'s bounty, there is now a bounty of ${CURRENT_AMOUNT} on their head in total!"
+
+# Message sent to the specified player when a bounty is added to their head, use {PLAYER} for the name of the player who
+# added the bounty, use {AMOUNT} for the amount added and use {CURRENT_AMOUNT} for the total amount the players head is now worth.
+
+bounty-add-target: "§c{PLAYER} has added ${AMOUNT} to your bounty, there is now a bounty of ${CURRENT_AMOUNT} on your head!" 
+
+# Message sent to player when they reset another players bounty, use {PLAYER} for the other players name
+
+reset-success: "§aSuccessfully reset {PLAYER}'s bounty to $0"
+
+# Message broadcasted to server when a player with a bounty is killed, use {PLAYER} for the players namem {KILLER} for
+# the killers name and {AMOUNT} for the amount claimed.
+
+bounty-claimed: "§e{PLAYER}'s bounty of ${AMOUNT} has been claimed by {KILLER}!"
+
+# Message sent to killer of a player with a bounty, use {PLAYER} for the player's name and {AMOUNT} for the amount
+# earnt.
+
+killer-message: "§aKilling {PLAYER} has resulted in you claiming a bounty of ${AMOUNT} for their head!"
+
+# Message sent to player killed with a bounty on their head, use {AMOUNT} for the amount the killer earnt.
+
+victim-message: "§cThe ${AMOUNT} bounty on your head has been claimed, the bounty on your head has been reset to $0!"
